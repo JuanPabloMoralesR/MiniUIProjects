@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins',sans-serif;
+}
+
+body{
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f2f2f2;
+}
+
+.cards .card .content{ 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+/*#FF637D*/
+
+.cards .card .content .img{ 
+    height: 130px;
+    width: 130px;
+    margin-bottom: 14px;
+}
+
+.card .content .img img{
+    height: 100%;
+    width: 100%;
+    background: #000;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.card .content .details .name{
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.card .content .details .job{
+    font-size: 20px;
+    color: #FF637D;
+}
+
+.card .content .media-icons{
+    display: flex;
+    margin-top: 10px;
+}
+
+.card .content .media-icons a{
+    height: 35px;
+    width: 35px;
+    color: aliceblue;
+    background: #FF637D;
+    margin: 0 4px;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 14px;
+    line-height: 35px;
+    border: 2px solid transparent;
+}
+
+.content .media-icons a:hover{
+    border-color: #FF637D;
+    color: #FF637D;
+    background: #fff;
+}
+
+
