@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins',sans-serif;
+}
+
+body{
+    min-height: 100vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background: #f2f2f2;
+}
+
+
+.main-container{
+    padding: 20px;
+    min-width: 500px;
+}
+
+.main-container .header{
+    display: flex;
+    justify-content: space-between;
+}
+
+.main-container .header > button{
+    padding: 5px 15px;
+    border: none;
+    background: #FF637D;
+    color: aliceblue;
+    font-weight: 500;
+    font-size: 18px;
+    border: 2px solid #FF637D;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+.main-container .header > button:hover{
+    background: white;
+    color: #FF637D;
+}
+
+
+
+.main-container .question-card-container .card{ 
+    background: red;
+    padding: 20px;
+    margin-top: 40px;
+    width: 500px;
+    min-height: 300px;
+    text-align: center;
+    cursor: pointer;
+    background: white;
+    -webkit-box-shadow: 2px 0px 22px 1px #211917; 
+    box-shadow: 2px 0px 20px 1px #211917;
+    transition: all 0.3s ease;
+}
+
+.main-container .question-card-container .card > div{
+    position: relative;
+    width: 100%;
+    top: 70px;
+    font-size: 30px;
+    font-weight: 500;
+    color: black;
+}
+
+.main-container .question-card-container .card > div.show-answer{
+    font-size: 15px;
+    opacity: 0;
+    transition: all 0.2s ease;
+}
+
+
+.main-container .question-card-container .card:hover > div.show-answer{
+    opacity: 1;
+}
+
+.controls{
+    display: flex;
+    padding: 15px 0;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.controls .control{ 
+    padding: 5px 10px;
+    font-size: 35px;
+    border: none;
+    background: none;
+    color: #FF637D;
+    cursor: pointer;
+    transition: all 0.4s ease;
+}
+
+.controls .control:hover{
+    transform: scale(1.1);
+}
+
+.answer{
+    opacity: 0;
+    transition: all ease .2s;
+}
+
